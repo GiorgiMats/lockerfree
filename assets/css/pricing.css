@@ -1,0 +1,83 @@
+.pricing {
+    padding: 80px 0;
+    background-color: var(--main-black);
+}
+
+.pricing-container {
+    display: grid;
+    grid-gap: 52px;
+}
+
+.pricing .section-heading .h1 {
+    color: var(--white);
+}
+
+.pricing-main {
+    display: grid;
+    grid-gap: 24px;
+    grid-auto-flow: column;
+}
+
+.pricing-main-item {
+    display: grid;
+    grid-gap: 24px;
+    padding: 24px;
+    background-color: #FFFFFF0D;
+    border-radius: 8px;
+}
+
+.pricing-main-item .divide-line {
+    background-color: #FFFFFF0D;
+}
+
+.pricing-main-item .btn-link a {
+    justify-content: start;
+}
+
+.pricing-main-item .btn-link a p {
+    color: var(--white);
+}
+
+.pricing-main-item .btn-link a:hover p {
+    color: var(--main-blue);
+}
+
+.pricing-main-item .btn-link a:hover svg path {
+    fill: var(--main-blue);
+}
+
+.btn-link {
+    margin: 8px 0;
+}
+
+.pmi-perkz-item {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 8px;
+    align-items: center;
+    justify-content: start;
+}
+
+.pmi-perkz {
+    display: grid;
+    grid-gap: 12px;
+}
+
+.pmi-perkz-item .check-circle {
+    background-color: #FFFFFF0D;
+}
+
+.pmi-perkz-item .check-circle svg path {
+    fill: var(--white);
+}
+
+.pmi-heading {
+    display: grid;
+    grid-gap: 12px;
+}
+
+@media only screen and (max-width: 764px) {
+    .pricing-main {
+        grid-auto-flow: row;
+    }
+}

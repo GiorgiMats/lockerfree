@@ -1,0 +1,165 @@
+.hero {
+    background-image: url('../img/hero-bg.jpg');
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.hero-box {
+    background-color: var(--white);
+    padding: 32px 40px;
+    margin: 64px auto;
+    border-radius: 8px;
+    max-width: 588px;
+    display: grid;
+    grid-gap: 32px;
+    position: relative;
+}
+
+.hero-box .h1 {
+    text-align: center;
+}
+
+.hero-action-container {
+    display: grid;
+    grid-gap: 8px;
+    justify-content: center;
+    justify-items: center;
+}
+
+.onlinenow-container {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    grid-gap: 6px;
+}
+
+.blinking-dot {
+    width: 7px;
+    height: 7px;
+    background-color: var(--main-green);
+    border-radius: 100%;
+    animation: blinkingDot 1s ease-in-out infinite;
+}
+
+@keyframes blinkingDot {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.hero-perkz-container {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 24px;
+    align-content: start;
+    justify-content: space-between;
+}
+
+.hero-perkz-item {
+    display: grid;
+    grid-gap: 8px;
+    justify-items: center;
+    max-width: 153px;
+}
+
+.check-circle {
+    width: 32px;
+    height: 32px;
+    background-color: #1A55C81A;
+    border-radius: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.check-circle svg {
+    width: 19px;
+}
+
+.check-circle svg path {
+    fill: var(--main-blue);
+}
+
+.hero-perkz-item p {
+    text-align: center;
+}
+
+.hero-perkz-item p span {
+    display: block;
+}
+
+.dontwait-container {
+    position: absolute;
+    top: -48px;
+    right: -48px;
+}
+
+#dontwait-2 {
+    display: none;
+}
+
+@media only screen and (max-width: 1180px) {
+    .hero {
+        background-position: center left;
+    }
+}
+
+@media only screen and (max-width: 609px) {
+    #dontwait-1 {
+        display: none;
+    }
+
+    #dontwait-2 {
+        display: block;
+        top: 0;
+        left: 50%;
+        right: unset;
+        transform: translate(-50%, -50%);
+    }
+
+    #dontwait-2 svg {
+        width: 120px;
+        height: 120px;
+    }
+
+    .hero-box {
+        margin-top: 40px;
+        margin-bottom: 80px;
+    }
+}
+
+@media only screen and (max-width: 452px) {
+    .hero-perkz-container {
+        grid-auto-flow: row;
+        justify-content: start;
+        grid-gap: 16px;
+    }
+
+    .hero-perkz-item p span {
+        display: unset;
+    }
+
+    .hero-perkz-item {
+        grid-auto-flow: column;
+        justify-content: start;
+        max-width: unset;
+        align-items: center;
+    }
+
+    .hero-perkz-item p {
+        text-align: left;
+    }
+
+    .hero-box {
+        padding: 24px;
+    }
+}

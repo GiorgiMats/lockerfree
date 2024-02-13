@@ -1,0 +1,144 @@
+.header {
+    padding: 22px 0;
+}
+
+.header-container {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    grid-gap: 24px;
+    align-items: center;
+}
+
+.logo-black-a:hover svg path,
+.logo-black-a svg:hover path,
+.logo-black-a svg:hover {
+    fill: var(--main-black);
+}
+
+.logo-black-a svg path,
+.logo-black-a svg {
+    transition: 0.2s ease-in-out;
+}
+
+.header-left-container {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    grid-gap: 32px;
+}
+
+.header-navigation {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 24px;
+}
+
+.header-navigation a:hover {
+    text-decoration: underline;
+    color: var(--main-black);
+}
+
+/* Mobile Menu */
+
+.section-header-right-container-mobile {
+    z-index: 3;
+    display: grid;
+    align-content: start;
+    position: fixed;
+    top: 0;
+    right: 0;
+    min-width: 260px;
+    background-color: #fff;
+    height: 100vh;
+    transition: 0.3s ease-in-out;
+    transform: translateX(100%);
+}
+
+.mobile-menu-close-container {
+    cursor: pointer;
+}
+
+.mobile-menu-close-container svg {
+    width: 22px;
+}
+
+.mobile-menu-close-container svg path {
+    fill: var(--main-black);
+}
+
+.mobile-menu-header {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr auto;
+    padding: 32px 32px 24px 32px;
+}
+
+.header-navigation-mobile {
+    display: grid;
+    padding: 24px 32px;
+    grid-gap: 24px;
+}
+
+.popups {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(19, 19, 29, 0.5);
+}
+
+.openMobileMenu {
+    transform: translateX(0) !important;
+}
+
+.displayBlock {
+    display: block;
+}
+
+.hamburger-container {
+    display: none;
+    justify-self: end;
+}
+
+#hamburger-login {
+    margin: 0 32px;
+}
+
+#hamburger {
+    cursor: pointer;
+}
+
+#hamburger svg {
+    width: 22px;
+}
+
+#hamburger svg path {
+    fill: var(--main-black);
+}
+
+@media only screen and (max-width: 608px) {
+    .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .header-left-container {
+        display: none;
+    }
+
+    .hamburger-container {
+        display: block;
+    }
+
+    .logo-black-a svg {
+        width: 118px;
+    }
+
+    .header {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+}

@@ -1,0 +1,319 @@
+:root {
+    --main-red: #C81A1A;
+    --main-blue: #1A55C8;
+    --main-green: #32C239;
+    --blue-1: #749CE8;
+    --main-black: #15171E;
+    --white: #fff;
+    --black-2: #5B5C61;
+}
+
+.--main-red {
+    color: var(--main-red) !important;
+}
+
+.--main-blue {
+    color: var(--main-blue) !important;
+}
+
+.--main-green {
+    color: var(--main-green) !important;
+}
+
+.--blue-1 {
+    color: var(--blue-1) !important;
+}
+
+.--main-black {
+    color: var(--main-black) !important;
+}
+
+.--white {
+    color: var(--white) !important;
+}
+
+.--main-black {
+    color: var(--main-black) !important;
+}
+
+.--black-2 {
+    color: var(--black-2) !important;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: "lacoste";
+    color: var(--main-black);
+    box-sizing: border-box;
+}
+
+::selection {
+    color: var(--white);
+    background: var(--main-black);
+}
+
+::-moz-selection {
+    color: var(--white);
+    background: var(--main-black);
+}
+
+@font-face {
+    font-family: "lacoste";
+    src: url('../fonts/Lacoste-Bold.ttf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "lacoste";
+    src: url('../fonts/Lacoste-Medium.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "lacoste";
+    src: url('../fonts/Lacoste-Regular.ttf');
+    font-weight: 400;
+}
+
+.h1 {
+    font-family: "lacoste";
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: -0.64px;
+}
+
+.h2-1 {
+    font-family: "lacoste";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: -0.48px;
+}
+
+.h2-2 {
+    font-family: "lacoste";
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: -0.48px;
+}
+
+.h3-1 {
+    font-family: "lacoste";
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: -0.36px;
+}
+
+.h3-2 {
+    font-family: "lacoste";
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -0.36px;
+}
+
+.p1-1 {
+    font-family: "lacoste";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: -0.32px;
+}
+
+.p1-2 {
+    font-family: "lacoste";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.p2 {
+    font-family: "lacoste";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: -0.28px;
+}
+
+
+.container {
+    max-width: 1280px;
+    margin: auto;
+    padding: 0 40px;
+}
+
+.divide-line {
+    width: 100%;
+    height: 1px;
+    background: #15171E1A;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.display-block {
+    display: block !important;
+}
+
+.display-grid {
+    display: grid !important;
+}
+
+.display-none {
+    display: none !important;
+}
+
+button,
+button a {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-family: "lacoste";
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.15s ease-in-out;
+}
+
+.btn-primary a {
+    color: var(--white);
+    background-color: var(--main-green);
+    padding: 16px 32px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 12px;
+    align-items: center;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: -0.36px;
+}
+
+.btn-primary a img {
+    width: 22px;
+}
+
+.btn-primary a:hover {
+    background-color: #2BA030;
+}
+
+.btn-secondary a {
+    color: var(--main-blue);
+    background-color: #1A55C81A;
+    padding: 12px 24px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 8px;
+    align-items: center;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.32px;
+}
+
+.btn-secondary a:hover {
+    background-color: var(--main-blue);
+    color: var(--white);
+}
+
+.btn-link a {
+    color: var(--main-black);
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 8px;
+    align-items: center;
+    /* border-radius: 50px; */
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.32px;
+    text-decoration: underline;
+}
+
+.btn-link a:hover {
+    color: var(--main-blue);
+}
+
+
+/* Section Heading */
+
+.section-heading {
+    display: grid;
+    grid-gap: 12px;
+    justify-content: center;
+}
+
+.section-heading h2,
+.section-heading p {
+    text-align: center;
+}
+
+/* Mobile Call Button */
+
+#mobileCallButton {
+    width: 100%;
+}
+
+.mobile-call-button {
+    position: fixed;
+    bottom: 24px;
+    display: grid;
+    justify-content: stretch;
+    width: 100%;
+    display: none;
+}
+
+#mobileCallButton a {
+    justify-content: center;
+}
+
+#mobileCallButton a img {
+    animation: phoneBzz 2s ease-in-out infinite;
+    animation-delay: 1s;
+}
+
+@keyframes phoneBzz {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    5% {
+        transform: rotate(30deg);
+    }
+
+    10% {
+        transform: rotate(-30deg);
+    }
+
+    15% {
+        transform: rotate(30deg);
+    }
+
+    20% {
+        transform: rotate(-30deg);
+    }
+
+    25% {
+        transform: rotate(30deg);
+    }
+
+    30% {
+        transform: rotate(0deg);
+    }
+}
+
+@media only screen and (max-width: 452px) {
+    .h1 {
+        font-size: 28px;
+    }
+
+    .mobile-call-button {
+        display: block;
+    }
+}

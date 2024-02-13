@@ -1,0 +1,95 @@
+.perkz {
+    padding: 24px 0;
+    background-color: #1A55C81A;
+    position: relative;
+}
+
+.perkz-container {
+    display: grid;
+    grid-gap: 24px;
+}
+
+.perkz-top-item {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 12px;
+    align-items: center;
+    justify-content: start;
+}
+
+.perkz-top-item .svg-fill path {
+    fill: var(--main-blue);
+}
+
+.perkz-top-item .svg-stroke path,
+.perkz-top-item .svg-stroke rect {
+    stroke: var(--main-blue);
+}
+
+.perkz-top-item svg {
+    width: 22px;
+}
+
+.perkz-top-container {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 32px;
+    justify-content: space-between;
+}
+
+.perkz-bottom-container {
+    display: flex;
+    grid-gap: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+.perkz-bottom-container p,
+.perkz-bottom-container .btn-link a {
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: -0.36px;
+    font-weight: 400;
+    display: inline-block;
+}
+
+.perkz-bottom-container .btn-link {
+    justify-self: start;
+}
+
+@media only screen and (max-width: 912px) {
+    .perkz-top-container {
+        grid-auto-flow: row;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+    }
+
+    .perkz-top-item {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 664px) {
+    .perkz-top-container {
+        grid-auto-flow: row;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .perkz-top-item {
+        justify-content: start;
+    }
+
+    .perkz-bottom-container {
+        display: grid;
+        grid-gap: 8px;
+        justify-content: start;
+    }
+}
+
+@media only screen and (max-width: 609px) {
+    .perkz {
+        padding-top: 80px;
+    }
+}
