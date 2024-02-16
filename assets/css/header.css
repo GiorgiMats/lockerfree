@@ -10,15 +10,22 @@
     align-items: center;
 }
 
-.logo-black-a:hover svg path,
-.logo-black-a svg:hover path,
-.logo-black-a svg:hover {
-    fill: var(--main-black);
+.logo-black-a {
+    color: var(--main-black);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.92px;
 }
 
-.logo-black-a svg path,
-.logo-black-a svg {
-    transition: 0.2s ease-in-out;
+.logo-black-a span {
+    color: var(--main-blue);
+    transition: 0.15s ease-in-out;
+}
+
+.logo-black-a:hover span {
+    color: var(--main-black);
 }
 
 .header-left-container {
@@ -119,6 +126,12 @@
     fill: var(--main-black);
 }
 
+.selected-a {
+    color: var(--main-black) !important;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
 @media only screen and (max-width: 608px) {
     .container {
         padding-left: 16px;
@@ -133,8 +146,9 @@
         display: block;
     }
 
-    .logo-black-a svg {
-        width: 118px;
+    .logo-black-a {
+        font-size: 24px;
+        letter-spacing: -1.44px;
     }
 
     .header {

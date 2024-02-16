@@ -278,6 +278,15 @@ button a {
     animation-delay: 1s;
 }
 
+.breadcrumbs {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    padding: 52px 0 24px 0;
+    grid-gap: 4px;
+    align-items: center;
+}
+
 @keyframes phoneBzz {
     0% {
         transform: rotate(0deg);
