@@ -69,6 +69,7 @@
     grid-gap: 8px;
     justify-items: center;
     max-width: 153px;
+    min-width: 105px;
 }
 
 .check-circle {
