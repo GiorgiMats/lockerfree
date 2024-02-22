@@ -4,7 +4,7 @@ var faqItem = document.querySelectorAll('.faq-item-container');
 
 faqItem.forEach((faq) => {
     let sum = faq.childNodes[1].clientHeight + 24;
-    faq.style.height = `${sum}px`;
+    faq.style.maxHeight = `${sum}px`;
 });
 
 window.addEventListener("resize", closeAllFaqs);
@@ -12,7 +12,7 @@ window.addEventListener("resize", closeAllFaqs);
 function closeAllFaqs() {
     faqItem.forEach((faq) => {
         let sum = faq.childNodes[1].clientHeight + 24;
-        faq.style.height = `${sum}px`;
+        faq.style.maxHeight = `${sum}px`;
         faq.childNodes[1].childNodes[3].childNodes[3].style.display = 'unset';
         faq.childNodes[1].childNodes[3].classList.add('plus');
     });
@@ -29,7 +29,7 @@ function toggleFaqItem(num) {
 function openFaqItem(num) {
     closeAllFaqs();
     faqItem[num].childNodes[1].childNodes[3].childNodes[3].style.display = 'none';
-    faqItem[num].style.height = '100%';
+    faqItem[num].style.maxHeight = '100%';
 
     faqItem[num].childNodes[1].childNodes[3].classList.remove('plus');
 }
@@ -38,7 +38,10 @@ function closeFaqItem(num) {
     faqItem[num].childNodes[1].childNodes[3].childNodes[3].style.display = 'unset';
 
     let sum = faqItem[num].childNodes[1].clientHeight + 24;
-    faqItem[num].style.height = `${sum}px`;
+    faqItem[num].style.maxHeight = `500px`;
+    setTimeout(function () {
+        faqItem[num].style.maxHeight = `${sum}px`;
+    }, 10);
 
     faqItem[num].childNodes[1].childNodes[3].classList.add('plus');
 }
